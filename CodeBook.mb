@@ -1,0 +1,171 @@
+SubjectID   
+        Subject Unique Identifier
+            Integer value within range [1..30]
+            
+ActivityName  
+        Activity Name
+            String values within set WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING  
+        
+BodyAcc-X_time_mean (relabelled from "tBodyAcc-mean()-X")  
+        Mean value of the X axis body linear accelerations defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyAcc-Y_time_mean (relabelled from "tBodyAcc-mean()-Y")  
+        Mean value of the Y axis body linear accelerations defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+BodyAcc-Z_time_mean (relabelled from "tBodyAcc-mean()-Z")  
+        Mean value of the Z axis body linear accelerations defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyAcc-X_time_std (relabelled from "tBodyAcc-std()-X")  
+        Standard Deviation value of the X axis body linear accelerations defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyAcc-Y_time_std (relabelled from "tBodyAcc-std()-Y")  
+        Standard Deviation value of the Y axis body linear accelerations defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+BodyAcc-Z_time_std (relabelled from "tBodyAcc-std()-Z")  
+        Standard Deviation value of the Z axis body linear accelerations defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+GravityAcc-X_time_mean (relabelled from "tGravityAcc-mean()-X")  
+        Mean value of the X axis gravitational acceleration defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+GravityAcc-Y_time_mean (relabelled from "tGravityAcc-mean()-Y")  
+        Mean value of the Y axis gravitational acceleration defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+GravityAcc-Z_time_mean (relabelled from "tGravityAcc-mean()-Z")  
+        Mean value of the Z axis gravitational acceleration defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+GravityAcc-X_time_std (relabelled from "tGravityAcc-std()-X")  
+        Standard Deviation value of the X axis gravitational acceleration defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+GravityAcc-Y_time_std (relabelled from "tGravityAcc-std()-Y")  
+        Standard Deviation value of the Y axis gravitational acceleration defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+GravityAcc-Z_time_std (relabelled from "tGravityAcc-std()-Z")  
+        Standard Deviation value of the Z axis gravitational acceleration defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyAccJerk-X_time_mean (relabelled from "tBodyAccJerk-mean()-X")  
+        Mean value of the X axis body linear jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyAccJerk-Y_time_mean (relabelled from "tBodyAccJerk-mean()-Y")  
+        Mean value of the Y axis body linear jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+BodyAccJerk-Z_time_mean (relabelled from "tBodyAccJerk-mean()-Z")  
+        Mean value of the Z axis body linear jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyAccJerk-X_time_std (relabelled from "tBodyAccJerk-std()-X")  
+        Standard Deviation value of the X axis body linear jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyAccJerk-Y_time_std (relabelled from "tBodyAccJerk-std()-Y")  
+        Standard Deviation value of the Y axis body linear jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+BodyAccJerk-Z_time_std (relabelled from "tBodyAccJerk-std()-Z")  
+        Standard Deviation value of the Z axis body linear jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyGyro-X_time_mean (relabelled from "tBodyGyro-mean()-X")  
+        Mean value of the X axis body angular velocity defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyGyro-Y_time_mean (relabelled from "tBodyGyro-mean()-Y")  
+        Mean value of the Y axis body angular velocity defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+BodyGyro-Z_time_mean (relabelled from "tBodyGyro-mean()-Z")  
+        Mean value of the Z axis body angular velocity defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyGyro-X_time_std (relabelled from "tBodyGyro-std()-X")  
+        Standard Deviation value of the X axis body angular velocity defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyGyro-Y_time_std (relabelled from "tBodyGyro-std()-Y")  
+        Standard Deviation value of the Y axis body angular velocity defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+BodyGyro-Z_time_std (relabelled from "tBodyGyro-std()-Z")  
+        Standard Deviation value of the Z axis body angular velocity defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+BodyGyroJerk-X_time_mean (relabelled from "tBodyGyroJerk-mean()-X")  
+        Mean value of the X axis body angular jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyGyroJerk-Y_time_mean (relabelled from "tBodyGyroJerk-mean()-Y")  
+        Mean value of the Y axis body angular jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+BodyGyroJerk-Z_time_mean (relabelled from "tBodyGyroJerk-mean()-Z")  
+        Mean value of the Z axis body angular jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyGyroJerk-X_time_std (relabelled from "tBodyGyroJerk-std()-X")  
+        Standard Deviation value of the X axis body angular jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+BodyGyroJerk-Y_time_std (relabelled from "tBodyGyroJerk-std()-Y")  
+        Standard Deviation value of the Y axis body angular jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+            
+BodyGyroJerk-Z_time_std (relabelled from "tBodyGyroJerk-std()-Z")  
+        Standard Deviation value of the Z axis body angular jerk defined in the time domain.
+            Double value normalized within range [-1.0..1.0]
+
+
+
+"BodyAcc-Mag_time_mean" "tBodyAccMag-mean()"
+"BodyAcc-Mag_time_std" "tBodyAccMag-std()"
+"GravityAcc-Mag_time_mean" "tGravityAccMag-mean()"
+"GravityAcc-Mag_time_std" "tGravityAccMag-std()"
+"BodyAccJerk-Mag_time_mean" "tBodyAccJerkMag-mean()"
+"BodyAccJerk-Mag_time_std" "tBodyAccJerkMag-std()"
+"BodyGyro-Mag_time_mean" "tBodyGyroMag-mean()"
+"BodyGyro-Mag_time_std" "tBodyGyroMag-std()"
+"BodyGyroJerk-Mag_time_mean" "tBodyGyroJerkMag-mean()"
+"BodyGyroJerk-Mag_time_std" "tBodyGyroJerkMag-std()"
+
+"BodyAcc-X_freq_mean" "fBodyAcc-mean()-X"
+"BodyAcc-Y_freq_mean" "fBodyAcc-mean()-Y"
+"BodyAcc-Z_freq_mean" "fBodyAcc-mean()-Z"
+"BodyAcc-X_freq_std" "fBodyAcc-std()-X"
+"BodyAcc-Y_freq_std" "fBodyAcc-std()-Y"
+"BodyAcc-Z_freq_std" "fBodyAcc-std()-Z"
+
+"BodyAccJerk-X_freq_mean" "fBodyAccJerk-mean()-X"
+"BodyAccJerk-Y_freq_mean" "fBodyAccJerk-mean()-Y"
+"BodyAccJerk-Z_freq_mean" "fBodyAccJerk-mean()-Z"
+"BodyAccJerk-X_freq_std" "fBodyAccJerk-std()-X"
+"BodyAccJerk-Y_freq_std" "fBodyAccJerk-std()-Y"
+"BodyAccJerk-Z_freq_std" "fBodyAccJerk-std()-Z"
+
+"BodyGyro-X_freq_mean" "fBodyGyro-mean()-X"
+"BodyGyro-Y_freq_mean" "fBodyGyro-mean()-Y"
+"BodyGyro-Z_freq_mean" "fBodyGyro-mean()-Z"
+"BodyGyro-X_freq_std" "fBodyGyro-std()-X"
+"BodyGyro-Y_freq_std" "fBodyGyro-std()-Y"
+"BodyGyro-Z_freq_std" "fBodyGyro-std()-Z"
+
+"BodyAcc-Mag_freq_mean" "fBodyAccMag-mean()"
+"BodyAcc-Mag_freq_std" "fBodyAccMag-std()"
+"BodyAccJerk-Mag_freq_mean" "fBodyBodyAccJerkMag-mean()"
+"BodyAccJerk-Mag_freq_std" "fBodyBodyAccJerkMag-std()"
+"BodyGyro-Mag_freq_mean" "fBodyBodyGyroMag-mean()"
+"BodyGyro-Mag_freq_std" "fBodyBodyGyroMag-std()"
+"BodyGyroJerk-Mag_freq_mean" "fBodyBodyGyroJerkMag-mean()"
+"BodyGyroJerk-Mag_freq_std" "fBodyBodyGyroJerkMag-std()"
+

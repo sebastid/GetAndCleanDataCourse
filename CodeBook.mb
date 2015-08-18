@@ -42,11 +42,12 @@ The run_analysis.R script implements the tasks to clean the raw dataset as follo
 - Renamed the undescriptive prefixes to a more meaningfull format, i.e t and f change to time and freq.
 - Removed the '-' symbols from variable names.
 - Removed the '(' and ')' characters from variable names.
+- Reformatted the Activity Name variable as a factor using meaningful activity names (re-using the labels defined from the raw     file activity_labels.txt).
 - Selected the variables related to the mean and standard deviation statistical measurements.
 - Performed a summrarization step by grouping the dataset by activity name and by subject ID showing
   a single row of averaged observations.
 
-[README.mb]()
+For more details refer to [README.mb]().
 
 ##Description of the variables in the 'tiny_data.txt' file
  - Dimensions of the dataset: 180 rows by 68 columns

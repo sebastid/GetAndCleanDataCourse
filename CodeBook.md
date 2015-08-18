@@ -1,6 +1,6 @@
 ## Project Description
 This is the project course programming assignment for the coursera GetDataAndClean course.
-Its purpose of this project is to demonstrate the ability to collect, work with, and clean a dataset.
+The purpose of this project is to demonstrate the ability to collect, work with, and clean a dataset.
 
 This file is the code book that provides some basic information about the raw data, and how to create the tidy datafile from it.
 It contains a full list of the variables defined in the tidy dataset.

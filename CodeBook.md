@@ -53,8 +53,8 @@ Refer to [README.md](./README.md) for more details about the script internal exe
      - `domain type` can be either 'time' to denote the time domain, or 'freq' to denote the frequency domain in which the original measurement was made.
      - `statistical metric` can be either 'mean' or 'std' to denote the mean or standard deviation calculations of the original feature measurements.
 
-###List of Variable in the tidy data set
-####SubjectID
+###List of Variable in the tidy data set  
+####SubjectID  
 Identification number assigned to each subject.
 - Column Index  : 1/68 
 - Class         : integer

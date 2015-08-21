@@ -40,7 +40,7 @@ The R script was written to follow the order of the project assignment brief as 
 2. Merge/Assemble the training and the test sets to create one data set.  
    The merging of the datasets were performed using a combination of rbind and cbind operations.
 
-3. Appropriately labels the dataset with descriptive variable name.  
+3. Appropriately labels the dataset with descriptive variable names.  
    The input list of feature names was obtained from the features.txt file and processed as follows:  
     * Regular expressions and the sub commands were used to clean the variables names.
     * The make.names command was used to relabel the duplicate variable names.

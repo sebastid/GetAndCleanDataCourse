@@ -1,4 +1,4 @@
-## Getting And Cleaning Data Course Project
+## Getting And Cleaning Data Course Project 
 This is sebastid's repository of the project course programming assignment for the Coursera 'Getting and Cleaning Data' course.
 
 The purpose of this project was to demonstrate the ability to collect, work with, and clean a dataset.

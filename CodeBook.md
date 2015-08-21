@@ -31,7 +31,7 @@ The run_analysis.R script implements the tasks to clean the raw dataset as follo
 
 Refer to [README.md](.README.md) for more details about the script internal execution steps.
 
-###Description of the variables in the 'tiny_data.txt' file
+###Description of the variables in the 'tidy_data.txt' file
 - Dimensions of the dataset:  
   180 rows by 68 columns
 - Summary of the data:   

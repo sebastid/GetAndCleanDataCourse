@@ -13,10 +13,10 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ###Creating the tidy data file
 Here are the steps to follow to create the tidy data file:  
-1. download the zip package from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-2. unzip the file to a chosen working directory, i.e.: '~/Documents/Coursera/Getdata/GetAndCleanDataCourse'
-3. edit the setwd() command in the script to point to the correct working directory, i.e.:
-    setwd("~/Documents/Coursera/Getdata/GetAndCleanDataCourse")
+1. download the zip package from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+2. unzip the file to a chosen working directory, i.e.: '~/Documents/Coursera/Getdata/GetAndCleanDataCourse'.
+3. edit the setwd() command in the script to point to the correct working directory, i.e.:  
+    setwd("~/Documents/Coursera/Getdata/GetAndCleanDataCourse").
 4. execute the run_analysis.R script from R or RStudio and review the saved tidy data set file 'tiny_data.txt'.
 
 ###Cleaning of the data
@@ -444,14 +444,14 @@ Summary value of the standard deviation of the angular velocity magnitude in the
 - Class         : numeric
 - Variable Unit : normalized value defined in the interval [-1.0,1.0]
 
-####BodyGyroJerkMag.freq.mean_mean
-Summary value of the mean angular jerk magnitude in the frequency domain. 
+####BodyGyroJerkMag.freq.mean_mean  
+Summary value of the mean angular jerk magnitude in the frequency domain.  
 - Column Index  : 67/68 
 - Class         : numeric
 - Variable Unit : normalized value defined in the interval [-1.0,1.0]
 
-####BodyGyroJerkMag.freq.std_mean
-Summary value of the standard deviation of the angular jerk magnitude in the frequency domain. 
+####BodyGyroJerkMag.freq.std_mean  
+Summary value of the standard deviation of the angular jerk magnitude in the frequency domain.   
 - Column Index  : 68/68 
 - Class         : numeric
 - Variable Unit : normalized value defined in the interval [-1.0,1.0]

@@ -2,7 +2,7 @@
 # Author: sebastid
 # Date: 21-08-2015
 #
-# Description: 
+# Description:  
 #  This script implements the necessary steps to obtain a tidy data set from the 
 #  Human Activity Recognition Using Smartphones Dataset.
 # 

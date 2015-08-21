@@ -4,14 +4,14 @@ This is sebastid's repository of the project course programming assignment for t
 The purpose of this project was to demonstrate the ability to collect, work with, and clean a dataset.
 
 This repository contains the required R script and document markdown files for the project course assignment:
+* CodeBook.md: the Code Book for the tidy dataset defined as a markdown file.
 * README.mb: this markdown file.
-* run_analysis.R: the R script used to create the tidy dataset file 'tidy_data.txt'
-* CodeBook.md: the CodeBook for the tidy dataset defined as a markdown file
+* run_analysis.R: the R script used to create the tidy dataset file 'tidy_data.txt'.
 * tidy_data.txt: the tidy data set created by run_analysis.R
 
 ## Description of the run_analysis.R script
 The R script run_analysis.R loads, merges and creates the tidy data set saved as 'tidy_data.txt'.
-It assumes that the dataset has been already downloaded and unzipped to a known working directory.
+The dataset package must already  be downloaded and unzipped to a known working directory.
 The script can be executed either from RStudio or the command line as follows:
 R -f run_analysis.R
 
@@ -31,8 +31,8 @@ R -f run_analysis.R
 ### Script operations
 The R script was written to follow the order of the project assignment brief as closely as possible and can be summarized as follows:
 
-0. Initialization of Current working direction and dataset file paths 
-... Initializes the current working directory and base directory paths.
+0. Initialization of Current working direction and dataset file paths  
+...Initializes the current working directory and base directory paths.
 
 1. Load the raw training and test datasets.
 ... Loading of the 8 input files listed above.

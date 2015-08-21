@@ -45,6 +45,7 @@ Refer to [README.md](./README.md) for more details about the script internal exe
      - `Feature Name` can be like 'BodyAccX', 'BodyAccMag', ...
      - `domain type` can be either 'time' to denote the time domain, or 'freq' to denote the frequency domain in which the original measurement was made.
      - `statistical metric` can be either 'mean' or 'std' to denote the mean or standard deviation calculations of the original feature measurements.
+     - `summarization method` is the mean in this tidy data set.
 
 ## List of Variables in the tidy data set  
 ### SubjectID  

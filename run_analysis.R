@@ -1,12 +1,13 @@
 #########################################################################################
 # Author: Sebastien Durand
-# Date: 18-08-2015
+# Date: 21-08-2015
 #
 # Description: 
 #  This script implements the necessary steps to obtain a tidy data set from the 
 #  Human Activity Recognition Using Smartphones Dataset.
 # 
 # The implemented steps are:
+# 0) Current working direction and file paths Intialization 
 # 1) Load the raw training and test datasets.
 # 2) Merge/Assemble the training and the test sets to create one data set.
 # 3) Extract only the measurements on the mean and standard deviation for each measurement.

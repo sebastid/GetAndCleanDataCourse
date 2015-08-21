@@ -1,53 +1,51 @@
 ## Code Book Description
-This is the codebook for the project course assignment of the coursera 'Getting And Cleaning Data' course.
+This is the code book for the project course assignment of the coursera 'Getting And Cleaning Data' course.
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a dataset.
 
 This code book provides some basic information about the raw data, and how to create the tidy datafile from it.
 It contains a full list of the variables defined in the tidy dataset.
 
-##Notes on the original (raw) data 
+###Notes on the original (raw) data 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 
-##Creating the tidy data file
-
-###Guide to create the tidy data file
-To use the run_analysis.R script one must do the following:
+###Creating the tidy data file
 1. download the zip package from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2. unzip the file to a chosen working directory, i.e.: '~/Documents/Coursera/Getdata/GetAndCleanDataCourse'
 3. edit the setwd() command in the script to point to the correct working directory, i.e.:
     setwd("~/Documents/Coursera/Getdata/GetAndCleanDataCourse")
-4. execute the script from R or RStudio and inspect the saved tidy data set file 'tiny_data.txt' (see README.md).
+4. execute the run_analysis.R script from R or RStudio and review the saved tidy data set file 'tiny_data.txt'.
 
 ###Cleaning of the data
-The run_analysis.R script implements the tasks to clean the raw dataset as follows:
+The run_analysis.R script implements the tasks to clean the raw dataset as follows:  
 - Renamed duplicated variables names and incorrect names (e.g.'BodyBody...').
 - Renamed the undescriptive prefixes to a more meaningfull format, i.e t and f change to time and freq.
 - Removed the '-' symbols from variable names.
 - Removed the '(' and ')' characters from variable names.
-- Reformatted the Activity Name variable as a factor using meaningful activity names (re-using the labels defined from the raw     file activity_labels.txt).
+- Reformatted the Activity Name variable as a factor using meaningful activity names (re-using the labels defined from the raw  file activity_labels.txt).
 - Selected the variables related to the mean and standard deviation statistical measurements.
 - Performed a summrarization step by grouping the dataset by activity name and by subject ID showing
   a single row of averaged observations.
 
-For more details refer to [README.mb]: sebastid/README.mb
+Refer to [README.md](.README.md) for more details about the script internal execution steps.
 
-##Description of the variables in the 'tiny_data.txt' file
- - Dimensions of the dataset: 180 rows by 68 columns
- - Summary of the data: 
-    The data was summarised using the average of 66 feature variables grouped by Subject IDs and Activity Names.
-    The dplyr::group_by and dplyr::summarise_each functions from the dplyr were used to perform the summarization.
- - Variables present in the dataset:
-    68 variables are present in the dataset comprising of 66 mean-summarised feature variables and two index variables
-    being SubjectID and ActivityName
- - Variable Name Formating:
-    The 66 summarized feature variable names are written according to the following format:
-    <Feature Name>.<domain type>.<statistical metric>_<summarization method>
-      - <Feature Name> can be like 'BodyAccX', 'BodyAccMag', ...
-      - <domain type> can be either 'time' to denote the time domain, or 'freq' to denote the frequency domain in which the original measurement was made
-      - <statistical metric> can be either 'mean' or 'std' to denote the mean or standard deviation calculations of the original feature measurements.
+###Description of the variables in the 'tiny_data.txt' file
+- Dimensions of the dataset:  
+  180 rows by 68 columns
+- Summary of the data:   
+  The data was summarised using the average of 66 feature variables grouped by Subject IDs and Activity Names.
+  The dplyr::group_by and dplyr::summarise_each functions from the dplyr were used to perform the summarization.
+- Variables present in the dataset:  
+  68 variables are present in the dataset comprising of 66 mean-summarised feature variables and two index variables
+  being SubjectID and ActivityName
+- Variable Name Formating:    
+  The 66 summarized feature variable names are written according to the following format:  
+    `Feature Name`.`domain type`.`statistical metric`_`summarization method`
+     - `Feature Name` can be like 'BodyAccX', 'BodyAccMag', ...
+     - `domain type` can be either 'time' to denote the time domain, or 'freq' to denote the frequency domain in which the original measurement was made.
+     - `statistical metric` can be either 'mean' or 'std' to denote the mean or standard deviation calculations of the original feature measurements.
  
 ###SubjectID
 Identification number assigned to each subject.

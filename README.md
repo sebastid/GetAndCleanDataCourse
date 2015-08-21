@@ -30,8 +30,8 @@ R -f run_analysis.R
 
 ### Script operations
 The R script was written to follow the order of the project assignment brief as closely as possible and can be summarized as follows:
-0 - Current working direction and file paths Initialization 
-* Initializes the current working directory and base directory paths.
+0) Current working direction and file paths Initialization 
+- Initializes the current working directory and base directory paths.
 
 1 - Load the raw training and test datasets.
 * Loading of the 8 input files listed above.

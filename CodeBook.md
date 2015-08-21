@@ -1,8 +1,8 @@
-## Project Description
-This is the project course programming assignment for the coursera GetDataAndClean course.
+## Code Book Description
+This is the codebook for the project course assignment of the coursera 'Getting And Cleaning Data' course.
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a dataset.
 
-This file is the code book that provides some basic information about the raw data, and how to create the tidy datafile from it.
+This code book provides some basic information about the raw data, and how to create the tidy datafile from it.
 It contains a full list of the variables defined in the tidy dataset.
 
 ##Notes on the original (raw) data 
@@ -11,15 +11,15 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 
-##Creating the tidy datafile
+##Creating the tidy data file
 
 ###Guide to create the tidy data file
 To use the run_analysis.R script one must do the following:
-1 - download the zip package from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-2 - unzip the file to a chosen working directory, i.e.: '~/Documents/Coursera/Getdata/GetAndCleanDataCourse'
-3 - edit the setwd() command in the script to point to the correct working directory, i.e.:
+1. download the zip package from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+2. unzip the file to a chosen working directory, i.e.: '~/Documents/Coursera/Getdata/GetAndCleanDataCourse'
+3. edit the setwd() command in the script to point to the correct working directory, i.e.:
     setwd("~/Documents/Coursera/Getdata/GetAndCleanDataCourse")
-4 - execute the script from R or RStudio and inspect the saved tidy data set file 'tiny_data.txt' (see README.md).
+4. execute the script from R or RStudio and inspect the saved tidy data set file 'tiny_data.txt' (see README.md).
 
 ###Cleaning of the data
 The run_analysis.R script implements the tasks to clean the raw dataset as follows:

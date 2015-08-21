@@ -41,7 +41,7 @@ The R script was written to follow the order of the project assignment brief as 
    The merging of the datasets were performed using a combination of rbind and cbind operations.
 
 3. Appropriately labels the dataset with descriptive variable name.  
-  The input list of feature names was obtained from the features.txt file and processed as follows:
+  The input list of feature names was obtained from the features.txt file and processed as follows:  
     * Regular expressions and the sub commands were used to clean the variables names.
     * The make.names command was used to relabel the duplicate variable names.
     * "SubjectID", "ActivityName" were added for the Subject ID  and Activity columns.
@@ -54,7 +54,7 @@ The R script was written to follow the order of the project assignment brief as 
    The dplyr::select command together with grep and a regular expression were used to select the mean and standard deviation calculated features.
 
 6. Summarize the tidy data by grouping by Subject and Activity.  
-   This step creates the final tidy dataset:
+   This step creates the final tidy dataset:  
      * The dplyr::group_by command was used to create the grouped table by Subject IDs and Activities Nanes.
      * The dplyr::summarise_each command was used to create the summarization  by averaging the grouped table.
 

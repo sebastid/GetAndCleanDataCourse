@@ -29,11 +29,11 @@ The run_analysis.R script cleans the raw dataset as follows:
   - Removes the '(' and ')' characters from variable names.
   - Reformats the Activity Name variable as a factor using meaningful activity names (re-using the labels defined from the raw  file activity_labels.txt).
   - Selects the variables related to the mean and standard deviation statistical measurements.
-  - Performs a summrarization step by grouping the dataset by activity name and by subject ID showing a single row of averaged observations.
+  - Performs a summarization step by grouping the dataset by activity name and by subject ID showing a single row of averaged observations.
 
 Refer to [README.md](./README.md) for more details about the script internal execution steps.
 
-### Description of the variables in the 'tidy_data.txt' file
+### Description of the variables created in the 'tidy_data.txt' file
 - Dimensions of the dataset:  
   180 rows by 68 columns
 - Summary of the data:   
@@ -49,7 +49,7 @@ Refer to [README.md](./README.md) for more details about the script internal exe
      - `domain type` can be either 'time' to denote the time domain, or 'freq' to denote the frequency domain in which the original measurement was made.
      - `statistical metric` can be either 'mean' or 'std' to denote the mean or standard deviation calculations of the original feature measurements.
 
-## List of Variable in the tidy data set  
+## List of Variables in the tidy data set  
 ### SubjectID  
 Identification number assigned to each subject.
 - Column Index  : 1/68 

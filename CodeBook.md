@@ -1,5 +1,5 @@
 ## Code Book 
-### Description
+### Description 
 This is the code book for the project course assignment of the coursera 'Getting And Cleaning Data' course.
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a dataset.
 

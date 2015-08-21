@@ -22,7 +22,7 @@ Here are the steps to follow to create the tidy data file:
 4. execute the [run_analysis.R](./run_analysis.R) script from R or RStudio and review the saved tidy data set file 'tiny_data.txt'
 
 ### Cleaning of the data
-The run_analysis.R script cleans the raw dataset as follows:  
+The [run_analysis.R](./run_analysis.R) script cleans the raw dataset as follows:  
   - Renames duplicated variables names and incorrect names (e.g.'BodyBody...').
   - Renames the undescriptive prefixes to a more meaningfull format, i.e t and f change to time and freq.
   - Removes the '-' symbols from variable names.

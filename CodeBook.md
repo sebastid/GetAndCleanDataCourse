@@ -36,9 +36,6 @@ Refer to [README.md](./README.md) for more details about the script internal exe
 ### Description of the variables created in the 'tidy_data.txt' file
 - Dimensions of the dataset:  
   180 rows by 68 columns
-- Summary of the data:   
-  The data is summarised using the average of 66 feature variables grouped by Subject IDs and Activity Names.
-  The dplyr::group_by and dplyr::summarise_each functions from the dplyr package were used to perform the summarization.
 - Variables present in the dataset:  
   68 variables are present in the dataset comprising of 66 mean-summarised feature variables and two index variables
   being SubjectID and ActivityName.

@@ -1,4 +1,5 @@
-## Code Book Description
+## Code Book 
+### Description
 This is the code book for the project course assignment of the coursera 'Getting And Cleaning Data' course.
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a dataset.
 
@@ -11,21 +12,18 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 
-###Creating the tidy data file
+## Creating the tidy data file
+### Instructions
 Here are the steps to follow to create the tidy data file:
-
 1. download the zip package from  
     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
-
 2. unzip the file to a chosen working directory, i.e.:  
     '~/Documents/Coursera/Getdata/GetAndCleanDataCourse'.
-
 3. edit the setwd() command in the script to point to the correct working directory, i.e.:  
     setwd("~/Documents/Coursera/Getdata/GetAndCleanDataCourse").
+4. execute the [run_analysis.R](./run_analysis.R) script from R or RStudio and review the saved tidy data set file 'tiny_data.txt'.
 
-4. execute the run_analysis.R script from R or RStudio and review the saved tidy data set file 'tiny_data.txt'.
-
-###Cleaning of the data
+## Cleaning of the data
 The run_analysis.R script cleans the raw dataset as follows:  
   - Renames duplicated variables names and incorrect names (e.g.'BodyBody...').
   - Renames the undescriptive prefixes to a more meaningfull format, i.e t and f change to time and freq.
@@ -37,7 +35,7 @@ The run_analysis.R script cleans the raw dataset as follows:
 
 Refer to [README.md](./README.md) for more details about the script internal execution steps.
 
-###Description of the variables in the 'tidy_data.txt' file
+## Description of the variables in the 'tidy_data.txt' file
 - Dimensions of the dataset:  
   180 rows by 68 columns
 - Summary of the data:   

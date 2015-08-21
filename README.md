@@ -1,5 +1,6 @@
 ## Getting And Cleaning Data Course Project
 This is sebastid's repository of the project course programming assignment for the coursera GetDataAndClean course.
+
 The purpose of this project was to demonstrate the ability to collect, work with, and clean a dataset.
 
 This repository contains the required R script and document markdown files for the project course assignment.

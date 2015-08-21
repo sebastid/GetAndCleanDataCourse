@@ -14,7 +14,11 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ## Creating the tidy data file
 ### How to Create Instructions
-
+1. qwe
+2. asdas
+3. asd
+4. asd
+5. 
 Here are the steps to follow to create the tidy data file:  
 1. download the zip package from
 2. unzip the file to a chosen working directory, i.e.:'~/Documents/Coursera/Getdata/GetAndCleanDataCourse'

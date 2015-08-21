@@ -26,7 +26,7 @@ R -f run_analysis.R
 * y_test.txt
 
 ### Output File:
-* tidy_data.txt (see [CodeBook.md](./CodeBook.md) for the content description).
+* tidy_data.txt (see [Code Book](./CodeBook.md) for the content description).
 
 ### Script operations
 The R script was written to follow the order of the project assignment brief as closely as possible and can be summarized as follows:

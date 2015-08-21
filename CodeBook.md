@@ -27,16 +27,15 @@ Here are the steps to follow to create the tidy data file:
 
 ###Cleaning of the data
 The run_analysis.R script cleans the raw dataset as follows:  
-- Renames duplicated variables names and incorrect names (e.g.'BodyBody...').
-- Renames the undescriptive prefixes to a more meaningfull format, i.e t and f change to time and freq.
-- Removes the '-' symbols from variable names.
-- Removes the '(' and ')' characters from variable names.
-- Reformats the Activity Name variable as a factor using meaningful activity names (re-using the labels defined from the raw  file activity_labels.txt).
-- Selects the variables related to the mean and standard deviation statistical measurements.
-- Performs a summrarization step by grouping the dataset by activity name and by subject ID showing
-  a single row of averaged observations.
+  - Renames duplicated variables names and incorrect names (e.g.'BodyBody...').
+  - Renames the undescriptive prefixes to a more meaningfull format, i.e t and f change to time and freq.
+  - Removes the '-' symbols from variable names.
+  - Removes the '(' and ')' characters from variable names.
+  - Reformats the Activity Name variable as a factor using meaningful activity names (re-using the labels defined from the raw  file activity_labels.txt).
+  - Selects the variables related to the mean and standard deviation statistical measurements.
+  - Performs a summrarization step by grouping the dataset by activity name and by subject ID showing a single row of averaged observations.
 
-Refer to [README.md](.README.md) for more details about the script internal execution steps.
+Refer to [README.md](./README.md) for more details about the script internal execution steps.
 
 ###Description of the variables in the 'tidy_data.txt' file
 - Dimensions of the dataset:  

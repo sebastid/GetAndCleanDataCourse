@@ -12,6 +12,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 
 ###Creating the tidy data file
+Here are the steps to follow to create the tidy data file:  
 1. download the zip package from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2. unzip the file to a chosen working directory, i.e.: '~/Documents/Coursera/Getdata/GetAndCleanDataCourse'
 3. edit the setwd() command in the script to point to the correct working directory, i.e.:
@@ -19,14 +20,14 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 4. execute the run_analysis.R script from R or RStudio and review the saved tidy data set file 'tiny_data.txt'.
 
 ###Cleaning of the data
-The run_analysis.R script implements the tasks to clean the raw dataset as follows:  
-- Renamed duplicated variables names and incorrect names (e.g.'BodyBody...').
-- Renamed the undescriptive prefixes to a more meaningfull format, i.e t and f change to time and freq.
-- Removed the '-' symbols from variable names.
-- Removed the '(' and ')' characters from variable names.
-- Reformatted the Activity Name variable as a factor using meaningful activity names (re-using the labels defined from the raw  file activity_labels.txt).
-- Selected the variables related to the mean and standard deviation statistical measurements.
-- Performed a summrarization step by grouping the dataset by activity name and by subject ID showing
+The run_analysis.R script cleans the raw dataset as follows:  
+- Renames duplicated variables names and incorrect names (e.g.'BodyBody...').
+- Renames the undescriptive prefixes to a more meaningfull format, i.e t and f change to time and freq.
+- Removes the '-' symbols from variable names.
+- Removes the '(' and ')' characters from variable names.
+- Reformats the Activity Name variable as a factor using meaningful activity names (re-using the labels defined from the raw  file activity_labels.txt).
+- Selects the variables related to the mean and standard deviation statistical measurements.
+- Performs a summrarization step by grouping the dataset by activity name and by subject ID showing
   a single row of averaged observations.
 
 Refer to [README.md](.README.md) for more details about the script internal execution steps.
@@ -35,13 +36,13 @@ Refer to [README.md](.README.md) for more details about the script internal exec
 - Dimensions of the dataset:  
   180 rows by 68 columns
 - Summary of the data:   
-  The data was summarised using the average of 66 feature variables grouped by Subject IDs and Activity Names.
-  The dplyr::group_by and dplyr::summarise_each functions from the dplyr were used to perform the summarization.
+  The data is summarised using the average of 66 feature variables grouped by Subject IDs and Activity Names.
+  The dplyr::group_by and dplyr::summarise_each functions from the dplyr package were used to perform the summarization.
 - Variables present in the dataset:  
   68 variables are present in the dataset comprising of 66 mean-summarised feature variables and two index variables
-  being SubjectID and ActivityName
+  being SubjectID and ActivityName.
 - Variable Name Formating:    
-  The 66 summarized feature variable names are written according to the following format:  
+  The 66 summarized feature variable names were written according to the following format:  
     `Feature Name`.`domain type`.`statistical metric`_`summarization method`
      - `Feature Name` can be like 'BodyAccX', 'BodyAccMag', ...
      - `domain type` can be either 'time' to denote the time domain, or 'freq' to denote the frequency domain in which the original measurement was made.

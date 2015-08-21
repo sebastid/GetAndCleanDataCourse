@@ -14,15 +14,12 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ##Creating the tidy datafile
 
 ###Guide to create the tidy data file
-The provided R script run_analysis.R loads, merges and creates the tidy data set saved as 'tidy_data.txt'.
-It assumes that the dataset has been already downloaded and unzipped to a known working directory
-
-To use run_analysis.R you must do the following:
+To use the run_analysis.R script one must do the following:
 1 - download the zip package from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2 - unzip the file to a chosen working directory, i.e.: '~/Documents/Coursera/Getdata/GetAndCleanDataCourse'
 3 - edit the setwd() command in the script to point to the correct working directory, i.e.:
     setwd("~/Documents/Coursera/Getdata/GetAndCleanDataCourse")
-4 - execute the script from R or RStudio and inspect the saved tidy data set file 'tiny_data.txt'
+4 - execute the script from R or RStudio and inspect the saved tidy data set file 'tiny_data.txt' (see README.md).
 
 ###Cleaning of the data
 The run_analysis.R script implements the tasks to clean the raw dataset as follows:
@@ -41,16 +38,16 @@ For more details refer to [README.mb]: sebastid/README.mb
  - Dimensions of the dataset: 180 rows by 68 columns
  - Summary of the data: 
     The data was summarised using the average of 66 feature variables grouped by Subject IDs and Activity Names.
-    The dplyr::group_by and dplyr::summarise_each functions from the dplyr were used to perform the summarisation.
+    The dplyr::group_by and dplyr::summarise_each functions from the dplyr were used to perform the summarization.
  - Variables present in the dataset:
     68 variables are present in the dataset comprising of 66 mean-summarised feature variables and two index variables
     being SubjectID and ActivityName
  - Variable Name Formating:
-    The 66 summarised feature variable names are written according to the following format:
-    <Feature Name>.<domain type>.<statistical metric>_<summarisation method>
+    The 66 summarized feature variable names are written according to the following format:
+    <Feature Name>.<domain type>.<statistical metric>_<summarization method>
       - <Feature Name> can be like 'BodyAccX', 'BodyAccMag', ...
       - <domain type> can be either 'time' to denote the time domain, or 'freq' to denote the frequency domain in which the original measurement was made
-      - <statistical metric> can be either 'mean' or 'std' to denote the mean or standard deviation calculations of the         original feature measurements.
+      - <statistical metric> can be either 'mean' or 'std' to denote the mean or standard deviation calculations of the original feature measurements.
  
 ###SubjectID
 Identification number assigned to each subject.

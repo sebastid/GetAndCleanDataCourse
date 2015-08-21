@@ -55,8 +55,8 @@ The R script was written to follow the order of the project assignment brief as 
 
 6. Summarize the tidy data by grouping by Subject and Activity.  
    This step creates the final tidy dataset:  
-     * The dplyr::group_by command was used to create the grouped table by Subject IDs and Activities Nanes.
-     * The dplyr::summarise_each command was used to create the summarization  by averaging the grouped table.
+  * The dplyr::group_by command was used to create the grouped table by Subject IDs and Activities Nanes.
+  * The dplyr::summarise_each command was used to create the summarization  by averaging the grouped table.
 
 7. Save the final tidy data frame to disk.  
    The final tidy data set was saved to disk using write.table as advised.

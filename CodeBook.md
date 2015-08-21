@@ -14,11 +14,12 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ## Creating the tidy data file
 ### How to Create Instructions
+
 Here are the steps to follow to create the tidy data file:  
-1. download the zip package from .
-2. unzip the file to a chosen working directory, i.e.:'~/Documents/Coursera/Getdata/GetAndCleanDataCourse'.
-3. edit the setwd() command in the script to point to the correct working directory, i.e.: setwd("~/Documents/Coursera/Getdata/GetAndCleanDataCourse").
-4. execute the [run_analysis.R](./run_analysis.R) script from R or RStudio and review the saved tidy data set file 'tiny_data.txt'.
+1. download the zip package from
+2. unzip the file to a chosen working directory, i.e.:'~/Documents/Coursera/Getdata/GetAndCleanDataCourse'
+3. edit the setwd() command in the script to point to the correct working directory, i.e.:setwd("~/Documents/Coursera/Getdata/GetAndCleanDataCourse")
+4. execute the [run_analysis.R](./run_analysis.R) script from R or RStudio and review the saved tidy data set file 'tiny_data.txt'
 
 ### Cleaning of the data
 The run_analysis.R script cleans the raw dataset as follows:  

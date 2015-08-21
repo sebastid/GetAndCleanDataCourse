@@ -7,19 +7,19 @@
 #  Human Activity Recognition Using Smartphones Dataset.
 # 
 # The implemented steps are:
-# 0) Current working direction and file paths Intialization 
-# 1) Load the raw training and test datasets.
-# 2) Merge/Assemble the training and the test sets to create one data set.
-# 3) Extract only the measurements on the mean and standard deviation for each measurement.
-# 4) Use descriptive activity names to name the activities in the data set.
-# 5) Appropriately labels the data set with descriptive variable name.
-# 6) From the data set in step 5, creates a second, independent tidy data set with the average. 
+# 1) Current working direction and file paths Intialization 
+# 2) Load the raw training and test datasets.
+# 3) Merge/Assemble the training and the test sets to create one data set.
+# 4) Extract only the measurements on the mean and standard deviation for each measurement.
+# 5) Use descriptive activity names to name the activities in the data set.
+# 6) Appropriately labels the data set with descriptive variable name.
+# 7) From the data set in step 5, creates a second, independent tidy data set with the average. 
 #    of each variable for each activity and each subject.
-# 7) Save the final tidy data frame from step 6) to disk.
+# 8) Save the final tidy data frame from step 6) to disk.
 #########################################################################################
 
 #----------------------------------------------------------------------------------------
-# 0 - Current working direction and file paths Intialization 
+# 1 - Current working direction and file paths Intialization 
 #----------------------------------------------------------------------------------------
 
 setwd("~/Documents/Coursera/Getdata/GetAndCleanDataCourse")
@@ -28,7 +28,7 @@ dataset_basedir_train <- file.path(dataset_basedir,"train")
 dataset_basedir_test <- file.path(dataset_basedir,"test")
 
 #----------------------------------------------------------------------------------------
-# 1 - Load the feature names, the activity labels, train and test datasets
+# 2 - Load the feature names, the activity labels, train and test datasets
 #----------------------------------------------------------------------------------------
 feature_names <- read.table(file.path(dataset_basedir, "features.txt"), header = F, stringsAsFactors = F)[,2]
 activity_labels <- read.table(file.path(dataset_basedir, "activity_labels.txt"), header = F, stringsAsFactors = F)[,2]
@@ -42,14 +42,14 @@ test_X <- read.table(file.path(dataset_basedir_test,"X_test.txt"), header = F, s
 test_y <- read.table(file.path(dataset_basedir_test,"y_test.txt"), header = F, stringsAsFactors = F)
 
 #----------------------------------------------------------------------------------------
-# 2 - Merge/Assemble the Train and Test data.frames into one data.frame
+# 3 - Merge/Assemble the Train and Test data.frames into one data.frame
 #----------------------------------------------------------------------------------------
 train_dataset <- cbind(train_X, train_subject, train_y)
 test_dataset <- cbind(test_X, test_subject, test_y)
 whole_dataset <- rbind(train_dataset, test_dataset)
 
 #----------------------------------------------------------------------------------------
-# 3 - Appropriately labels the dataset with descriptive variable name
+# 4 - Appropriately labels the dataset with descriptive variable name
 #----------------------------------------------------------------------------------------
 
 #--- Reformat labels like "tBodyAcc-mean()-X" to "BodyAcc_X.time.mean"
@@ -74,12 +74,12 @@ relabelled_feature_names <- make.names(relabelled_feature_names, unique=TRUE, al
 names(whole_dataset) <- c(relabelled_feature_names, "SubjectID", "ActivityName")
 
 #----------------------------------------------------------------------------------------
-# 4 - Use descriptive activity names to name the activities in the data set.
+# 5 - Use descriptive activity names to name the activities in the data set.
 #----------------------------------------------------------------------------------------
 whole_dataset$ActivityName <- factor(whole_dataset$ActivityName, labels=activity_labels)
 
 #----------------------------------------------------------------------------------------
-# 5 - Extract the column names for the measurements on the mean and standard deviation 
+# 6 - Extract the column names for the measurements on the mean and standard deviation 
 #----------------------------------------------------------------------------------------
 library(dplyr)
 whole_dataset_tbl <- tbl_df(whole_dataset)
@@ -92,13 +92,13 @@ selected_feature_names <- names(whole_dataset_tbl)[selected_fearture_idx]
 tidy_data_tbl <- select(whole_dataset_tbl, one_of(selected_feature_names))
 
 #----------------------------------------------------------------------------------------
-# 6 - Summarize the tidy data by grouping by Subject and Activity using dplyr::group_by and summarise_each
+# 7 - Summarize the tidy data by grouping by Subject and Activity using dplyr::group_by and summarise_each
 #----------------------------------------------------------------------------------------
 grouped_by_tidy_data <- group_by(tidy_data_tbl, SubjectID, ActivityName)
 summarized_tidy_data <- summarise_each(grouped_by_tidy_data, funs("mean", mean(., na.rm = TRUE)))
 
 #----------------------------------------------------------------------------------------
-# 7 - Save the final tidy data frame to disk
+# 8 - Save the final tidy data frame to disk
 #----------------------------------------------------------------------------------------
 write.table(summarized_tidy_data, file="tidy_data.txt", row.name=F)
 
